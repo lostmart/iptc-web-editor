@@ -7,7 +7,7 @@ Vous pouvez le créer par exemple avec la commande suivante :
 docker volume create user-data
 ```
 
-Commande à éxécutée pour lancer la production : 
+Commande à éxécuter pour lancer la production : 
 ```bash
 docker run -v user-data:/data -p 8088:80 $IMG_NAME
 ```
