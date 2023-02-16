@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require('cors')
+const photos = require('./data/mockData.js')
 
 const app = express()
 
@@ -7,7 +8,7 @@ app.use(cors())
 
 app.get('/', (req, res) => {
 	res.json({
-		msg: 'running ...',
+		msg: photos,
 	})
 })
 
